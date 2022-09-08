@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin: 0 2em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.input-container--civility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.input-civility {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+    margin-bottom: 1rem;
+
+    flex-wrap: wrap;
+}
+
+input[type="radio"] {
+    margin-right: 1rem;
+}
+
+#otherCivility {
+    display: none;
+}
+
+#other:checked ~ #otherCivility {
+    display:block
+}
+
+.text-input {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.submit:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.2s;
+}

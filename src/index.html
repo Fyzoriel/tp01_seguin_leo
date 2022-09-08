@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="../public/styles/style.css">
+</head>
+
+<body>
+<form method="post" id="form">
+    <div class="form-container">
+
+        <div class="input-container">
+            <div class="input-group">
+                <label for="firstname">Prénom</label>
+                <input class="text-input" type="text" name="firstname" placeholder="Prénom" id="firstname" required pattern="^[a-zA-Z]+$">
+            </div>
+
+            <div class="input-group">
+                <label for="name">Nom</label>
+                <input class="text-input" type="text" name="name" placeholder="Nom" id="name" required pattern="^[a-zA-Z]+$">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input class="text-input" type="text" name="email" placeholder="Email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Téléphone</label>
+                <input class="text-input" type="text" name="phone" placeholder="Phone" id="phone" required pattern="[0-9]{10}">
+            </div>
+        </div>
+
+        <div class="input-container--civility">
+            <label for="man">Homme</label>
+            <input type="radio" name="civility" value="man" id="man" required>
+
+            <label for="woman">Femme</label>
+            <input type="radio" name="civility" value="woman" id="woman" required>
+
+            <label for="other">Autre</label>
+            <div class="input-civility">
+                <input type="radio" name="civility" value="other" id="other" required>
+                <input class="text-input" type="text" name="otherCivility" placeholder="Précisez" id="otherCivility" pattern="^[a-zA-Z]+$">
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-group">
+                <label for="address">Adresse</label>
+                <input class="text-input"ntype="text" name="address" placeholder="Addresse" id="address" required pattern="^[a-zA-Z]+$">
+            </div>
+
+            <div class="input-group">
+                <label for="zipcode">Code postal</label>
+                <input class="text-input" type="text" name="zipcode" placeholder="Code postal" id="zipcode" required pattern="^[[0-9]{5}+$">
+            </div>
+
+            <div class="input-group">
+                <label for="city">Ville</label>
+                <input class="text-input" type="text" name="city" placeholder="Ville" id="city" required>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-group">
+                <label for="login">Login</label>
+                <input class="text-input" type="text" name="login" placeholder="Login" id="login" required pattern="^[a-zA-Z]+$">
+            </div>
+
+            <div class="input-group">
+                <label for="passphrase">Phrase de passe</label>
+                <input class="text-input" type="password" name="passphrase" placeholder="Phrase de passe" id="passphrase" required min="8">
+            </div>
+        </div>
+
+        <input class="submit" type="submit" value="Envoyer">
+    </div>
+</form>
+</body>
+</html>
